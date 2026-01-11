@@ -1,0 +1,5 @@
+{
+  "name": "Cargo Master 3D",
+  "description": "An isometric 3D puzzle game where you optimize cargo space by fitting complex polyomino shapes into a shipping container.",
+  "requestFramePermissions": []
+}

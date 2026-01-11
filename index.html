@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-black">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Cargo Master 3D | Isometric Logistics Puzzle Game by Vicky Kumar</title>
+    <meta name="description" content="Play Cargo Master 3D, a browser-based isometric puzzle game. Optimize cargo space, rotate polyomino shapes, and master logistics. Created by AI Developer Vicky Kumar (vickyiitp)." />
+    <meta name="keywords" content="Vicky Kumar, vickyiitp, AI developer, IIT Patna, 100 games, web apps, devil labs, Cargo Master 3D, puzzle game, isometric game, react game" />
+    <meta name="author" content="Vicky Kumar" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#FF6600" />
+    <link rel="canonical" href="https://vickyiitp.tech/cargo-master" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vickyiitp.tech/cargo-master" />
+    <meta property="og:title" content="Cargo Master 3D | Play Now" />
+    <meta property="og:description" content="Master the art of cargo. A 3D isometric puzzle game where efficiency is survival. Built by Vicky Kumar." />
+    <meta property="og:image" content="https://vickyiitp.tech/og-cargo-master.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vickyiitp.tech/cargo-master" />
+    <meta property="twitter:title" content="Cargo Master 3D | Play Now" />
+    <meta property="twitter:description" content="Master the art of cargo. A 3D isometric puzzle game where efficiency is survival. Built by Vicky Kumar." />
+    <meta property="twitter:image" content="https://vickyiitp.tech/og-cargo-master.jpg" />
+    <meta property="twitter:creator" content="@vickyiitp" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Cargo Master 3D",
+          "applicationCategory": "Game",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "An isometric 3D puzzle game where you optimize cargo space by fitting complex polyomino shapes into a shipping container.",
+          "author": {
+            "@type": "Person",
+            "name": "Vicky Kumar",
+            "url": "https://vickyiitp.tech",
+            "sameAs": [
+              "https://linkedin.com/in/vickyiitp",
+              "https://github.com/vickyiitp",
+              "https://x.com/vickyiitp",
+              "https://instagram.com/vickyiitp",
+              "https://youtube.com/@vickyiitp"
+            ]
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Vicky Kumar",
+          "alternateName": "vickyiitp",
+          "alumniOf": "IIT Patna",
+          "jobTitle": "AI Developer",
+          "url": "https://vickyiitp.tech",
+          "sameAs": [
+            "https://linkedin.com/in/vickyiitp",
+            "https://github.com/vickyiitp",
+            "https://x.com/vickyiitp"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #0a0a0a;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        touch-action: none;
+      }
+      canvas {
+        display: block;
+      }
+      
+      /* Landing Page Animations */
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+      @keyframes spin-slow {
+        from { transform: rotateY(0deg) rotateX(20deg); }
+        to { transform: rotateY(360deg) rotateX(20deg); }
+      }
+      @keyframes spin-reverse {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      
+      .translate-z-32 { transform: translateZ(32px); }
+      
+      /* Custom Scrollbar */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #1f2937;
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #4b5563;
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #6b7280;
+      }
+      
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
